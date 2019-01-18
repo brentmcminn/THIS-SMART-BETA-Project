@@ -179,7 +179,6 @@ def tracking_error(benchmark_returns_by_date, etf_returns_by_date):
     """
     assert benchmark_returns_by_date.index.equals(etf_returns_by_date.index)
     
-    #TODO: Implement function
     
     # difference between the ETF and benchmark returns
     std = etf_returns_by_date.subtract(benchmark_returns_by_date).std(ddof = 1)
